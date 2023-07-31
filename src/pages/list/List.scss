@@ -1,0 +1,20 @@
+:root {
+    --borderColorLight: rgb(214, 210, 210);
+    --borderColorDark: white;
+    --primaryColorDark: #cdf6f9;
+    --primaryColorLight: #66dac0;
+    --bgColorLight: white;
+    --bgColorDark: black;
+    --hoverColorLight: #c5f5ea;
+    --hoverColorDark: #cdf6f9;
+    --boxShadow: 2px 4px 10px 2px rgb(102, 218, 192, 0.3);
+  }
+
+  .list{
+    display: flex;
+    width: 100%;
+    
+    .list-container{
+        flex: 5;
+    }
+  }

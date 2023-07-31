@@ -1,0 +1,79 @@
+:root {
+  --borderColorLight: rgb(214, 210, 210);
+  --borderColorDark: white;
+  --primaryColorDark: #cdf6f9;
+  --primaryColorLight: #66dac0;
+  --bgColorLight: white;
+  --bgColorDark: black;
+  --hoverColorLight: #c5f5ea;
+  --hoverColorDark: #cdf6f9;
+}
+
+.navbar {
+  padding: 1rem;
+  border-bottom: 0.5px solid var(--borderColorLight);
+  display: flex;
+  align-items: center;
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .search {
+      display: flex;
+      align-items: center;
+
+      input {
+        border: none;
+        outline: none;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        background-color: transparent;
+      }
+
+      .search-icon{
+        color: var(--primaryColorLight);
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;  
+      padding: 1rem;
+      padding: 1rem 2rem;
+
+      .item{
+        display: flex;
+        align-items: center;
+        margin-right: 1.5rem;
+        position: relative;
+
+        .icon{
+            color: var(--primaryColorLight);
+            cursor: pointer;
+            font-size: 1.8rem;
+        }
+
+        .counter{
+            padding: 2px 7px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 50%;
+            background-color: red;
+            
+            position: absolute;
+            right: -7px;
+            top: -10px;
+        }
+
+        .avatar{
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+      }
+    }
+  }
+}

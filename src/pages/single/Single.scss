@@ -1,0 +1,123 @@
+:root {
+  --borderColorLight: rgb(214, 210, 210);
+  --borderColorDark: white;
+  --primaryColorDark: #cdf6f9;
+  --primaryColorLight: #66dac0;
+  --bgColorLight: white;
+  --bgColorDark: black;
+  --hoverColorLight: #c5f5ea;
+  --hoverColorDark: #cdf6f9;
+  --boxShadow: 2px 4px 10px 2px rgb(102, 218, 192, 0.3);
+}
+
+.single {
+  display: flex;
+  width: 100%;
+
+  .single-container {
+    flex: 5;
+
+    .top {
+      padding: 2rem 1rem;
+      display: flex;
+      gap: 2rem;
+
+      .left {
+        width: 45%;
+        padding: 2rem;
+        box-shadow: var(--boxShadow);
+        border-radius: 10px;
+
+        .heading {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 2rem;
+
+          .edit-button {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+            align-self: center;
+            color: var(--primaryColorLight);
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            background-color: #cdf6f9;
+            cursor: pointer;
+          }
+
+          .title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: capitalize;
+          }
+        }
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+
+          .item-img {
+            width: 100px;
+            height: 93px;
+            display: block;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .details {
+            .item-title {
+              font-size: 1.5rem;
+              text-transform: capitalize;
+              margin-bottom: 0.5rem;
+              color: var(--primaryColorLight);
+            }
+
+            .detail-item {
+              text-transform: capitalize;
+              margin-bottom: 0.2rem;
+              font-size: 1rem;
+
+              .item-key {
+                font-weight: bold;
+                margin-right: 0.5rem;
+              }
+
+              .mail {
+                text-transform: lowercase;
+              }
+              .phone,
+              .country {
+                font-weight: bold;
+                text-transform: uppercase;
+                color: var(--primaryColorLight);
+              }
+            }
+          }
+        }
+      }
+      .right {
+        width: calc(55% - 2rem);
+      }
+    }
+
+    .bottom {
+      margin: 1rem;
+      margin-bottom: 3rem;
+      .bottom-container {
+        margin: 0 auto;
+        box-shadow: var(--boxShadow);
+        padding: 2rem;
+        border-radius: 10px;
+
+        .title {
+          font-size: 1.8rem;
+          font-weight: bold;
+          text-transform: capitalize;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

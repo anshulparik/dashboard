@@ -1,0 +1,45 @@
+:root {
+  --borderColorLight: rgb(214, 210, 210);
+  --borderColorDark: white;
+  --primaryColorDark: #cdf6f9;
+  --primaryColorLight: #66dac0;
+  --bgColorLight: white;
+  --bgColorDark: black;
+  --hoverColorLight: #c5f5ea;
+  --hoverColorDark: #cdf6f9;
+  --boxShadow: 2px 4px 10px 2px rgb(102, 218, 192, 0.3);
+}
+
+.home {
+  display: flex;
+  width: 100%;
+  .home-container {
+    flex: 5;
+
+    .widgets,
+    .charts {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem 1rem;
+      gap: 2rem;
+    }
+
+    .lists {
+      margin: 1rem;
+      margin-bottom: 3rem;
+      .list-container {
+        margin: 0 auto;
+        box-shadow: var(--boxShadow);
+        padding: 2rem;
+        border-radius: 10px;
+
+        .list-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-transform: capitalize;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

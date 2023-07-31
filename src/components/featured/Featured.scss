@@ -1,0 +1,86 @@
+:root {
+    --borderColorLight: rgb(214, 210, 210);
+    --borderColorDark: white;
+    --primaryColorDark: #cdf6f9;
+    --primaryColorLight: #66dac0;
+    --bgColorLight: white;
+    --bgColorDark: black;
+    --hoverColorLight: #c5f5ea;
+    --hoverColorDark: #cdf6f9;
+    --boxShadow: 2px 4px 10px 2px rgb(102, 218, 192, 0.3);
+  }
+
+  .featured{
+    flex-basis: 35%;
+    box-shadow: var(--boxShadow);
+    padding: 2rem;
+    border-radius: 10px;
+
+    .top{
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        justify-content: space-between;
+    }
+
+    .bottom{
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .featured-chart{
+            height: 100px;
+            width: 100px;
+        }
+
+        .title{
+            font-weight: 500;
+            color: var(--primaryColorLight);
+            text-transform: capitalize;
+        }
+        .amount{
+            font-size: 2rem;
+        }
+        .desc{
+            font-weight: 300;
+            font-size: 1rem;    
+            text-align: center;
+        }
+
+        .summary{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .item{
+                text-align: center;
+
+                .itemTitle{
+                    text-transform: capitalize;
+                    font-size: 1rem;
+                    color: var(--primaryColorLight);
+                    font-weight: bold;
+                }
+                .itemResult{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 0.8rem;
+                    font-size: 1rem;
+
+                    &.positive{
+                        color: green;
+                    }
+                    &.negative{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+  }

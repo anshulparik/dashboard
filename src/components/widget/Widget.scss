@@ -1,0 +1,64 @@
+:root {
+    --borderColorLight: rgb(214, 210, 210);
+    --borderColorDark: white;
+    --primaryColorDark: #cdf6f9;
+    --primaryColorLight: #66dac0;
+    --bgColorLight: white;
+    --bgColorDark: black;
+    --hoverColorLight: #c5f5ea;
+    --hoverColorDark: #cdf6f9;
+    --boxShadow: 2px 4px 10px 2px rgb(102, 218, 192, 0.3);
+  }
+
+.widget{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+
+    flex-basis: calc(33.33% - 2rem);
+
+    .left, .right{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      .title{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+        color: var(--primaryColorLight);
+        margin-bottom: 1rem;
+      }
+
+      .counter{
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+      }
+
+      .link{
+        font-size: 1rem;
+        border-bottom: 1px solid var(--primaryColorLight);
+        text-transform: capitalize;
+      } 
+
+      .percentage{
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+
+        &.positive{
+          color: green;
+        }
+      }
+
+      .icon{
+        align-self: flex-end;
+        padding: 0.2rem;
+        font-size: 2rem;
+      }
+    }
+}

@@ -1,0 +1,26 @@
+:root {
+  --borderColorLight: rgb(214, 210, 210);
+  --borderColorDark: white;
+  --primaryColorDark: #cdf6f9;
+  --primaryColorLight: #66dac0;
+  --bgColorLight: white;
+  --bgColorDark: black;
+  --hoverColorLight: #c5f5ea;
+  --hoverColorDark: #cdf6f9;
+  --boxShadow: 2px 4px 10px 2px rgb(102, 218, 192, 0.3);
+}
+
+.chart {
+  flex-basis: calc(65% - 2rem);
+  padding: 2rem;
+  box-shadow: var(--boxShadow);
+  border-radius: 10px;
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 5rem;
+  }
+
+}
